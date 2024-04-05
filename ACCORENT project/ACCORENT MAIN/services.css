@@ -1,0 +1,60 @@
+.service-container {
+    position: relative;
+    width: 400px; /* Set width of the container */
+    height: 400px; /* Set height of the container */
+    margin: 50px auto; /* Center the container */
+}
+
+.service {
+    background-color: #fff;
+    border-radius: 50%; /* Makes the container circular */
+    width: 120px; /* Set width to match height for perfect circles */
+    height: 120px; /* Set height to match width for perfect circles */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the button */
+    text-align: center; /* Centers the content horizontally */
+    line-height: 1.5;
+    transition: all 0.3s ease; /* Add transition effect for smooth hover */
+}
+
+.service:nth-child(odd) {
+    transform-origin: 100% 50%; /* Set transform origin to right center for odd items */
+}
+
+.service:nth-child(even) {
+    transform-origin: 0 50%; /* Set transform origin to left center for even items */
+}
+
+.service:hover {
+    transform: scale(1.1); /* Enlarge the circle on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+
+.service h3 {
+    color: #333;
+    margin: 0;
+}
+
+.service p {
+    color: #666;
+    margin: 0;
+}
+
+/* Adjust rotation for each service */
+.service:nth-child(1) {
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+}
+
+.service:nth-child(2) {
+    transform: rotate(60deg) translate(200px) rotate(-60deg);
+}
+
+.service:nth-child(3) {
+    transform: rotate(120deg) translate(200px) rotate(-120deg);
+}
+
+/* Add more rotations as needed */
