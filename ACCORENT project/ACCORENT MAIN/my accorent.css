@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Adjust as needed */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 253, 253, 0); /* Adjust background color and opacity */
+    padding: 20px;
+    width: 80%; /* Adjust the width as needed */
+    border-radius: 20px;
+    font-family: Arial, sans-serif; /* Adjust font-family */
+    text-align: center; /* Center align the text */
+    box-shadow: 0 4px 8px rgba(230, 49, 49, 0.827); /* Add shadow for depth */
+  }
+  
+  .text-overlay p {
+    margin-bottom: 20px; /* Add some space between each point */
+    font-size: 15px; /* Increase font size for better readability */
+    color: #333; /* Change text color */
+  }
+  
+  .text-overlay p:last-child {
+    margin-bottom: 0; /* Remove margin for the last point */
+  }
+  
+  .container img {
+    max-width: 150%;
+    height: 600%;
+    border-radius: 10px; /* Add border radius to the image */
+  }
+  
